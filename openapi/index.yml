@@ -1,0 +1,177 @@
+openapi: "3.0.0"
+info:
+  title: NetBox API
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  version: 2.6.1
+servers:
+- url: http://localhost:32768/api
+paths:
+  # /circuits/_choices/:
+  #   $ref: './paths/circuits/_choices.yml'
+  # /circuits/providers/:
+  #   $ref: './paths/circuits/providers.yml'
+  # /circuits/circuit-types/:
+  #   $ref: './paths/circuits/circuit-types.yml'
+  # /circuits/circuits/:
+  #   $ref: './paths/circuits/circuits.yml'
+  # /circuits/circuit-terminations/:
+  #   $ref: './paths/circuits/circuit-terminations.yml'
+
+  # /dcim/_choices/:
+  #   $ref: './paths/dcim/_choices.yml'
+  # /dcim/regions/:
+  #   $ref: './paths/dcim/regions.yml'
+  /dcim/sites/:
+    $ref: './paths/dcim/sites.yml'
+  # /dcim/rack-groups/:
+  #   $ref: './paths/dcim/rack-groups.yml'
+  # /dcim/rack-roles/:
+  #   $ref: './paths/dcim/rack-roles.yml'
+  # /dcim/racks/:
+  #   $ref: './paths/dcim/racks.yml'
+  # /dcim/rack-reservations/:
+  #   $ref: './paths/dcim/rack-reservations.yml'
+  # /dcim/manufacturers/:
+  #   $ref: './paths/dcim/manufacturers.yml'
+  # /dcim/device-types/:
+  #   $ref: './paths/dcim/device-types.yml'
+  # /dcim/console-port-templates/:
+  #   $ref: './paths/dcim/console-port-templates.yml'
+  # /dcim/console-server-port-templates/:
+  #   $ref: './paths/dcim/console-server-port-templates.yml'
+  # /dcim/power-port-templates/:
+  #   $ref: './paths/dcim/power-port-templates.yml'
+  # /dcim/power-outlet-templates/:
+  #   $ref: './paths/dcim/power-outlet-templates.yml'
+  # /dcim/interface-templates/:
+  #   $ref: './paths/dcim/interface-templates.yml'
+  # /dcim/front-port-templates/:
+  #   $ref: './paths/dcim/front-port-templates.yml'
+  # /dcim/rear-port-templates/:
+  #   $ref: './paths/dcim/rear-port-templates.yml'
+  # /dcim/device-bay-templates/:
+  #   $ref: './paths/dcim/device-bay-templates.yml'
+  # /dcim/device-roles/:
+  #   $ref: './paths/dcim/device-roles.yml'
+  # /dcim/platforms/:
+  #   $ref: './paths/dcim/platforms.yml'
+  # /dcim/devices/:
+  #   $ref: './paths/dcim/devices.yml'
+  # /dcim/console-ports/:
+  #   $ref: './paths/dcim/console-ports.yml'
+  # /dcim/console-server-ports/:
+  #   $ref: './paths/dcim/console-server-ports.yml'
+  # /dcim/power-ports/:
+  #   $ref: './paths/dcim/power-ports.yml'
+  # /dcim/power-outlets/:
+  #   $ref: './paths/dcim/power-outlets.yml'
+  # /dcim/interfaces/:
+  #   $ref: './paths/dcim/interfaces.yml'
+  # /dcim/front-ports/:
+  #   $ref: './paths/dcim/front-ports.yml'
+  # /dcim/rear-ports/:
+  #   $ref: './paths/dcim/rear-ports.yml'
+  # /dcim/device-bays/:
+  #   $ref: './paths/dcim/device-bays.yml'
+  # /dcim/inventory-items/:
+  #   $ref: './paths/dcim/inventory-items.yml'
+  # /dcim/console-connections/:
+  #   $ref: './paths/dcim/console-connections.yml'
+  # /dcim/power-connections/:
+  #   $ref: './paths/dcim/power-connections.yml'
+  # /dcim/interface-connections/:
+  #   $ref: './paths/dcim/interface-connections.yml'
+  # /dcim/cables/:
+  #   $ref: './paths/dcim/cables.yml'
+  # /dcim/virtual-chassis/:
+  #   $ref: './paths/dcim/virtual-chassis.yml'
+  # /dcim/power-panels/:
+  #   $ref: './paths/dcim/power-panels.yml'
+  # /dcim/power-feeds/:
+  #   $ref: './paths/dcim/power-feeds.yml'
+  # /dcim/connected-device/:
+  #   $ref: './paths/dcim/connected-device.yml'
+
+  # /extras/_choices/:
+  #   $ref: './paths/extras/_choices.yml'
+  # /extras/_custom_field_choices/:
+  #   $ref: './paths/extras/_custom_field_choices.yml'
+  # /extras/graphs/:
+  #   $ref: './paths/extras/graphs.yml'
+  # /extras/export-templates/:
+  #   $ref: './paths/extras/export-templates.yml'
+  # /extras/topology-maps/:
+  #   $ref: './paths/extras/topology-maps.yml'
+  # /extras/tags/:
+  #   $ref: './paths/extras/tags.yml'
+  # /extras/image-attachments/:
+  #   $ref: './paths/extras/image-attachments.yml'
+  # /extras/config-contexts/:
+  #   $ref: './paths/extras/config-contexts.yml'
+  # /extras/reports/:
+  #   $ref: './paths/extras/reports.yml'
+  # /extras/object-changes/:
+  #   $ref: './paths/extras/object-changes.yml'
+
+  # /ipam/_choices/:
+  #   $ref: './paths/ipam/_choices.yml'
+  # /ipam/vrfs/:
+  #   $ref: './paths/ipam/vrfs.yml'
+  # /ipam/rirs/:
+  #   $ref: './paths/ipam/rirs.yml'
+  # /ipam/aggregates/:
+  #   $ref: './paths/ipam/aggregates.yml'
+  # /ipam/roles/:
+  #   $ref: './paths/ipam/roles.yml'
+  # /ipam/prefixes/:
+  #   $ref: './paths/ipam/prefixes.yml'
+  # /ipam/ip-addresses/:
+  #   $ref: './paths/ipam/ip-addresses.yml'
+  # /ipam/vlan-groups/:
+  #   $ref: './paths/ipam/vlan-groups.yml'
+  # /ipam/vlans/:
+  #   $ref: './paths/ipam/vlans.yml'
+  # /ipam/services/:
+  #   $ref: './paths/ipam/services.yml'
+
+  # /secrets/_choices/:
+  #   $ref: './paths/secrets/_choices.yml'
+  # /secrets/secret-roles/:
+  #   $ref: './paths/secrets/secret-roles.yml'
+  # /secrets/secrets/:
+  #   $ref: './paths/secrets/secrets.yml'
+  # /secrets/get-session-key/:
+  #   $ref: './paths/secrets/get-session-key.yml'
+  # /secrets/generate-rsa-key-pair/:
+  #   $ref: './paths/secrets/generate-rsa-key-pair.yml'
+
+  # /tenancy/_choices/:
+  #   $ref: './paths/tenancy/_choices.yml'
+  # /tenancy/tenant-groups/:
+  #   $ref: './paths/tenancy/tenant-groups.yml'
+  # /tenancy/tenants/:
+  #   $ref: './paths/tenancy/tenants.yml'
+
+  # /virtualization/_choices/:
+  #   $ref: './paths/virtualization/_choices.yml'
+  # /virtualization/cluster-types/:
+  #   $ref: './paths/virtualization/cluster-types.yml'
+  # /virtualization/cluster-groups/:
+  #   $ref: './paths/virtualization/cluster-groups.yml'
+  # /virtualization/clusters/:
+  #   $ref: './paths/virtualization/clusters.yml'
+  # /virtualization/virtual-machines/:
+  #   $ref: './paths/virtualization/virtual-machines.yml'
+  # /virtualization/interfaces/:
+  #   $ref: './paths/virtualization/interfaces.yml'
+components:
+  schemas:
+    securitySchemes:
+      bearerAuth:
+        type: http
+        scheme: bearer
+        bearerFormat: JWT
+security:
+- bearerAuth: []

@@ -1,0 +1,23 @@
+get:
+  responses:
+    '200':
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+            - count
+            - results
+            properties:
+              count:
+                type: integer
+              next:
+                type: string
+                nullable: true
+              previous:
+                type: string
+                nullable: true
+              results:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Site'
