@@ -1,0 +1,17 @@
+required:
+- name
+- slug
+type: object
+properties:
+  name:
+    title: Name
+    type: string
+    maxLength: 50
+    minLength: 1
+    slug:
+      title: Slug
+      type: string
+      format: slug
+      pattern: ^[-a-zA-Z0-9_]+$
+      maxLength: 50
+      minLength: 1

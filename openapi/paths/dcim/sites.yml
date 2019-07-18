@@ -1,4 +1,115 @@
 get:
+  parameters:
+  - in: query
+    name: id
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: name
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: slug
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: facility
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: asn
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: latitude
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: longitude
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: contact_name
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: contact_phone
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: contact_email
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: tenant_group_id
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: tenant_group
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: tenant_id
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: tenant
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: id__in
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: q
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: status
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: region_id
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: region
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: tag
+    required: false
+    schema:
+      type: string
+  - in: query
+    name: limit
+    required: false
+    schema:
+      type: integer
+  - in: query
+    name: offset
+    required: false
+    schema:
+      type: integer
   responses:
     '200':
       content:
