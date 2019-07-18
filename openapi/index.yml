@@ -167,12 +167,12 @@ paths:
   # /virtualization/interfaces/:
   #   $ref: './paths/virtualization/interfaces.yml'
 components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
   schemas:
-    securitySchemes:
-      bearerAuth:
-        type: http
-        scheme: bearer
-        bearerFormat: JWT
     DcimSite:
       $ref: './components/dcim/site.yml'
 security:
