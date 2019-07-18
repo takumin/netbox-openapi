@@ -133,4 +133,4 @@ get:
               results:
                 type: array
                 items:
-                  $ref: '#/components/schemas/DcimSite'
+                  $ref: './components/dcim/site.yml'
