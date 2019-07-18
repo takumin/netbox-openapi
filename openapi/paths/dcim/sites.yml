@@ -1,4 +1,5 @@
 get:
+  operationId: getDcimSite
   parameters:
   - in: query
     name: id
@@ -131,4 +132,4 @@ get:
               results:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Site'
+                  $ref: '#/components/schemas/DcimSite'

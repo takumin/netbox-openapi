@@ -173,8 +173,7 @@ components:
         type: http
         scheme: bearer
         bearerFormat: JWT
-    dcim:
-      Site:
-        $ref: './components/dcim/site.yml'
+    DcimSite:
+      $ref: './components/dcim/site.yml'
 security:
 - bearerAuth: []
